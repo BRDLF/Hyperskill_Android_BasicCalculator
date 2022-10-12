@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/numberEntry"
+        android:text="@string/zero"
+        android:hint="@string/zero"
+        android:autofillHints="number"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText">
+
+        <LinearLayout
+            style="@style/ButtonRow"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clearButton"
+                style="@style/ButtonIndividual"
+                android:layout_weight="3"
+                android:text="@string/clear"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/divideButton"
+                style="@style/ButtonIndividual"
+                android:text="@string/div" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ButtonRow"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/ButtonIndividual"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/ButtonIndividual"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/ButtonIndividual"
+                android:text="@string/nine" />
+
+            <Button
+                android:id="@+id/multiplyButton"
+                style="@style/ButtonIndividual"
+                android:text="@string/times" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ButtonRow"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button4"
+                style="@style/ButtonIndividual"
+                android:text="@string/four" />
+            <Button
+                android:id="@+id/button5"
+                style="@style/ButtonIndividual"
+                android:text="@string/five" />
+            <Button
+                android:id="@+id/button6"
+                style="@style/ButtonIndividual"
+                android:text="@string/six" />
+            <Button
+                android:id="@+id/subtractButton"
+                style="@style/ButtonIndividual"
+                android:text="@string/min" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ButtonRow"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonIndividual"
+                android:text="@string/one"/>
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonIndividual"
+                android:text="@string/two" />
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonIndividual"
+                android:text="@string/three" />
+            <Button
+                android:id="@+id/addButton"
+                style="@style/ButtonIndividual"
+                android:text="@string/plus" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ButtonRow"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button0"
+                style="@style/ButtonIndividual"
+                android:layout_weight="2"
+                android:text="@string/zero" />
+            <Button
+                android:id="@+id/dotButton"
+                style="@style/ButtonIndividual"
+                android:text="@string/dot" />
+            <Button
+                android:id="@+id/equalButton"
+                style="@style/ButtonIndividual"
+                android:text="@string/equals" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
