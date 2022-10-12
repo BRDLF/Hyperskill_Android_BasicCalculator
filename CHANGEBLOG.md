@@ -1,5 +1,12 @@
 # Hyperskill_Kotlin_BasicCalculator
 
+### Stage 2/4: Enter a number
+
+Ok. This is more what i'm used to.
+Though, my familiarity is still a bit shakey. I know how to make things work, but I'm not exactly sure They're working well.
+The buttons are still misaligned, and if the editText field gets too large it starts to crows out the screen. I've got to find some way to fix that, but it's not a priority yet. \
+Is this what they call "technical debt"? Perhaps.
+
 ### Stage 1/4: The layout
 
 This is my first foray into Android dev work. The first hurdle is getting familiar with the ecosystem. How it all works.
