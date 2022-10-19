@@ -1,4 +1,4 @@
-# Hyperskill_Kotlin_BasicCalculator
+# Hyperskill_Android_BasicCalculator
 
 This is the 1st project I am completing as part of Jetbrain Academy's Android course.
 
