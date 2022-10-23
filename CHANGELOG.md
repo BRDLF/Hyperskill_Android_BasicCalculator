@@ -1,5 +1,9 @@
 # Hyperskill_Kotlin_BasicCalculator
 
+### Stage 3/4: Calculations
+
+App now performs math.
+
 ### Stage 2/4: Enter a number
 
 Allows number entry. Clear function
