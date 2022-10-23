@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.equalButton).setOnClickListener { textBox.solve(historyList) }
-
     }
 
     private fun EditText.solve(history: MutableList<String>) {
@@ -47,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             else -> null
         } ?: return
         this.text.clear()
-        this.text.append(res.toString())
+        this.text.append(res.toString().cleanDecimal())
         history.clear()
     }
 
@@ -67,7 +66,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun MutableList<String>.clearText() = this.clear()
-    private fun EditText.clearText() = this.text.replace(0, this.text.length, "0")
+
+    private fun EditText.clearText() {
+        this.text.replace(0, this.text.length, "0")
+        this.hint = "0"
+    }
 
     private fun MutableList<String>.operation(operand: EditText, operator: String) {
         if (operator == "-" && operand.text.toString() == "0") operand.text.replace(0, 1, "-") // if input empty, pressing - to make negative
@@ -77,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         }
         this.add(operand.text.toString())
         this.add(operator)
+        operand.hint = operand.text
         operand.text.clear()
-        operand.text.append("0")
     }
 }

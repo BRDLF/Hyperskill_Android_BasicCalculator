@@ -1,5 +1,11 @@
 # Hyperskill_Kotlin_BasicCalculator
 
+### Stage 4/4: Finishing touches
+
+Oki dokes, it's done. Pretty simple for the finishing touches. I'd actually already included a function to convert a string-double to a string-int. \
+Using the hint to show history is a cute touch, I probably would have done something different but this is supposed to be a simple calculator, not an advanced one. \
+This app doesn't have a layout for landscape mode. I think that's fine, but I'd really like to learn how to do that. Maybe the next project.
+
 ### Stage 3/4: Calculations
 
 Right now this is very messy. I'm less concerned with making a "nice" or a "good" app and more "making something that works". \
